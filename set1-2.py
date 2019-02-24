@@ -1,7 +1,10 @@
-ch = input()
-
-if(ch=='A' or ch=='a' or ch=='E' or ch =='e' or ch=='I'
- or ch=='i' or ch=='O' or ch=='o' or ch=='U' or ch=='u'):
-    print(ch, "Vowel")
-else:
-    print(ch, "Consonant")
+def vowel_or_consonant(c):
+    if not c.isalpha():
+        return 'Neither'
+    vowels = 'aeiou'
+    if c.lower() in vowels:
+        return 'Vowel'
+    else:
+        return 'Consonant'
+for c in input():
+    print (c, vowel_or_consonant(c))
