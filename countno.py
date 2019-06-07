@@ -1,7 +1,7 @@
-Number = int(input())
-Count = 0
+Number = input()
+sum = 0
 while(Number > 0):
     Number = Number // 10
-    Count = Count + 1
-
+    sum = sum + 1
+Count=sum
 print(Count)
